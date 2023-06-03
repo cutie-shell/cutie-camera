@@ -9,6 +9,10 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
+    app.setOrganizationName("Cutie Shell");
+    app.setOrganizationDomain("github.com/cutie-shell");
+    app.setApplicationName("cutie-camera");
+
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
